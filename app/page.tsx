@@ -9,7 +9,18 @@ import BscaleTransitionSlide from "@/components/slides/bscale-transition-slide";
 import BscaleModelSlide from "@/components/slides/bscale-model-slide";
 import BscaleResultsSlide from "@/components/slides/bscale-results-slide";
 import ClaudeCodeRevealSlide from "@/components/slides/claude-code-reveal-slide";
+import SystemDesignSlide from "@/components/slides/system-design-slide";
+import ToolingOverviewSlide from "@/components/slides/tooling-overview-slide";
+import LeadsContextSlide from "@/components/slides/leads-context-slide";
+import LeadsOverviewSlide from "@/components/slides/leads-overview-slide";
+import DevWorkflowSlide from "@/components/slides/dev-workflow-slide";
+import DevToolingSlide from "@/components/slides/dev-tooling-slide";
+import PatternsAntiPatternsSlide from "@/components/slides/patterns-anti-patterns-slide";
 import PlaceholderSlide from "@/components/slides/placeholder-slide";
+import TakeawayDocumentationSlide from "@/components/slides/takeaway-documentation-slide";
+import TakeawayTrainingSlide from "@/components/slides/takeaway-training-slide";
+import CTASlide from "@/components/slides/cta-slide";
+import BonusSlide from "@/components/slides/bonus-slide";
 import ClosingSlide from "@/components/slides/closing-slide";
 
 const slides = [
@@ -30,24 +41,28 @@ const slides = [
   <ClaudeCodeRevealSlide key="claude-code-reveal" />,
 
   // Section 2: Designing a Claude Code-First System
-  <SectionSlide key="sec-system" title="Designing a Claude Code-First System" />,
-  <PlaceholderSlide key="system-1" section="System Design" title="Top-Down Architecture" body="How we structure projects, repos, and CLAUDE.md files so Claude Code understands the full system from day one." />,
-  <PlaceholderSlide key="system-2" section="System Design" title="Processes That Scale" body="The workflows and conventions that let three devs move like thirty — without stepping on each other." />,
+  <SystemDesignSlide key="system-design" />,
+  <ToolingOverviewSlide key="tooling-overview" />,
 
-  // Section 3: Leads — Processes & Tooling
+  // Section 3: Leads — Client & Business
+  <LeadsContextSlide key="leads-context" />,
   <SectionSlide key="sec-leads" title="Leads: Processes & Tooling" />,
-  <PlaceholderSlide key="leads-1" section="Leads" title="Orchestrating Work" body="How leads break down enterprise requirements into Claude Code-ready tasks and keep the pipeline flowing." />,
-  <PlaceholderSlide key="leads-2" section="Leads" title="Lead Tooling Stack" body="The specific tools and integrations leads use to manage context, review output, and ship decisions fast." />,
+  <PlaceholderSlide key="leads-1" section="Client & Business" title="Notion" body="Spec out client details — doubles as our CRM." image="/notion1.png" />,
+  <PlaceholderSlide key="leads-2" section="Client & Business" title="Claude Code PRD" body="Generate structured PRDs from client specs using the product-thinking skill." image="/notion2.png" />,
 
   // Section 4: Dev Workflows & Tooling (the beef)
   <SectionSlide key="sec-devs" title="Dev Workflows & Tooling" />,
-  <PlaceholderSlide key="devs-1" section="Dev Workflows" title="Day-to-Day with Claude Code" body="What a typical dev session looks like — from pulling a task to pushing a PR, all through Claude Code." />,
-  <PlaceholderSlide key="devs-2" section="Dev Workflows" title="Dev Tooling Stack" body="Editor setup, CLI workflows, prompt patterns, and the extensions that make everything click." />,
-  <PlaceholderSlide key="devs-3" section="Dev Workflows" title="Patterns & Anti-Patterns" body="What works, what doesn't, and the lessons we learned the hard way shipping with AI-first workflows." />,
+  <DevWorkflowSlide key="devs-1" />,
+  <PlaceholderSlide key="devs-standup" section="Dev Workflows" title="Standup" body="" image="/standup01.jpeg" />,
+  <DevToolingSlide key="devs-2" />,
+  <PatternsAntiPatternsSlide key="devs-3" />,
 
   // Section 5: Takeaways
   <SectionSlide key="sec-takeaways" title="Takeaways" />,
-  <PlaceholderSlide key="takeaways-1" section="Takeaways" title="What to Bring Home" body="The key principles, tools, and mindset shifts you can apply to your own team starting tomorrow." />,
+  <TakeawayDocumentationSlide key="takeaway-doc" />,
+  <TakeawayTrainingSlide key="takeaway-train" />,
+  <CTASlide key="cta" />,
+  <BonusSlide key="bonus" />,
 
   // Closing
   <ClosingSlide key="closing" />,
