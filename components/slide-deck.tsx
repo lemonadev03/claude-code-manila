@@ -57,10 +57,12 @@ export default function SlideDeck({ slides }: SlideDeckProps) {
           initial="enter"
           animate="center"
           exit="exit"
-          transition={{ duration: 0.35, ease: "easeInOut" }}
-          className="absolute inset-0"
+          transition={{ duration: 0.15, ease: "easeInOut" }}
+          className="absolute inset-0 flex items-center justify-center"
         >
-          {slides[current]}
+          <div className="h-full w-full max-w-[1400px] mx-auto">
+            {slides[current]}
+          </div>
         </motion.div>
       </AnimatePresence>
 

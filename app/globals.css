@@ -30,6 +30,10 @@
   --color-glow: rgba(245, 197, 66, 0.15);
 }
 
+html {
+  font-size: 20px;
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
